@@ -7,7 +7,7 @@ import styled from "styled-components"
 
 
 
-export default function Info(){
+export default function InfoPage(){
     return(
         <>
             
