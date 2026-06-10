@@ -47,8 +47,8 @@ import R1895 from "./weapons/R1895.svg";
 import S12K from "./weapons/S12K.svg";
 import S686 from "./weapons/S686.svg";
 import S1897 from "./weapons/S1897.svg";
-import Sawedoff from "./weapons/Sawed-off.svg";
-import scarl from "./weapons/scar-l.svg";
+import 소드오프 from "./weapons/Sawed-off.svg";
+import scar from "./weapons/scar-l.svg";
 import Sickle from "./weapons/Sickle.svg";
 import Skorpion from "./weapons/Skorpion.svg";
 import SKS from "./weapons/SKS.svg";
@@ -87,20 +87,21 @@ import max_scope from "./parts/15x_scope.svg";
 import bullet_loops from "./parts/bullet_loops.svg";
 import cheek_pad from "./parts/cheek_pad.svg";
 import choke from "./parts/choke.svg";
-import compensator1 from "./parts/compensator1.svg";
-import compensator2 from "./parts/compensator2.svg";
-import compensator3 from "./parts/compensator3.svg";
+import compensator1 from "./parts/compensator1.svg"; // ar
+import compensator2 from "./parts/compensator2.svg"; // sr
+import compensator3 from "./parts/compensator3.svg"; // smg
 import duckbill from "./parts/duckbill.svg";
-import ext_quickdraw_mag1 from "./parts/ext_quickdraw_mag1.svg";
-import ext_quickdraw_mag2 from "./parts/ext_quickdraw_mag2.svg";
-import ext_quickdraw_mag3 from "./parts/ext_quickdraw_mag3.svg";
-import extended_mag1 from "./parts/extended_mag1.svg";
-import extended_mag2 from "./parts/extended_mag2.svg";
-import extended_mag3 from "./parts/extended_mag3.svg";
-import flask_hider1 from "./parts/flask_hider1.svg";
-import flask_hider2 from "./parts/flask_hider2.svg";
-import flask_hider3 from "./parts/flask_hider3.svg";
+import ext_quickdraw_mag1 from "./parts/ext_quickdraw_mag1.svg"; // ar
+import ext_quickdraw_mag2 from "./parts/ext_quickdraw_mag2.svg"; // sr
+import ext_quickdraw_mag3 from "./parts/ext_quickdraw_mag3.svg"; // smg
+import extended_mag1 from "./parts/extended_mag1.svg"; // ar
+import extended_mag2 from "./parts/extended_mag2.svg"; // sr
+import extended_mag3 from "./parts/extended_mag3.svg"; // smg
+import flask_hider1 from "./parts/flask_hider1.svg"; // ar
+import flask_hider2 from "./parts/flask_hider2.svg"; // sr
+import flask_hider3 from "./parts/flask_hider3.svg"; // smg
 import folding_stock from "./parts/folding_stock.svg";
+import vertical_foregrip from "./parts/vertical_foregrip.svg";
 import half_grip from "./parts/half_grip.svg";
 import heavy_stock from "./parts/heavy_stock.svg";
 import holograpic from "./parts/holograpic.svg";
@@ -108,12 +109,12 @@ import hybrid from "./parts/hybrid.svg";
 import laser_sight from "./parts/laser_sight.svg";
 import lightweight_grip from "./parts/lightweight_grip.svg";
 import muzzle_brake from "./parts/muzzle_brake.svg";
-import quickdraw_mag1 from "./parts/quickdraw_mag1.svg";
-import quickdraw_mag2 from "./parts/quickdraw_mag2.svg";
+import quickdraw_mag1 from "./parts/quickdraw_mag1.svg"; // ar
+import quickdraw_mag2 from "./parts/quickdraw_mag2.svg"; // smg
 import red_dot from "./parts/red_dot.svg";
-import suppressor1 from "./parts/suppressor1.svg";
-import suppressor2 from "./parts/suppressor2.svg";
-import suppressor3 from "./parts/suppressor3.svg";
+import suppressor1 from "./parts/suppressor1.svg"; // ar
+import suppressor2 from "./parts/suppressor2.svg"; // sr
+import suppressor3 from "./parts/suppressor3.svg"; // smg
 import tactical_stock from "./parts/tactical_stock.svg";
 import thumb_grip from "./parts/thumb_grip.svg";
 import tilted_grip from "./parts/tilted_grip.svg";
@@ -149,7 +150,7 @@ export const WeaponImages = {
   famas, g36c, groza, JS9, k2, Kar98k, m16a4, M24, M79, M249,
   M416, m762, Machete, MG3, mini14, MK12, MK14, mk47, Mortar, Mosin,
   MP5K, MP9, O12, P18C, P90, P92, P1911, Pan, Panzerfaust, Pickaxe,
-  PP19, qbu, qbz, R45, R1895, S12K, S686, S1897, Sawedoff, scarl,
+  PP19, qbu, qbz, R45, R1895, S12K, S686, S1897, 소드오프, scar,
   Sickle, Skorpion, SKS, SLR, Stungun, SVD, TommyGun, UMP, UZI, Vector,
   VSS, Win94
 };
@@ -167,7 +168,7 @@ export const PartImages = {
   flask_hider3, folding_stock, half_grip, heavy_stock, holograpic, hybrid,
   laser_sight, lightweight_grip, muzzle_brake, quickdraw_mag1, quickdraw_mag2,
   red_dot, suppressor1, suppressor2, suppressor3, tactical_stock, thumb_grip,
-  tilted_grip
+  tilted_grip, vertical_foregrip
 };
 
 export const RideImages = {
