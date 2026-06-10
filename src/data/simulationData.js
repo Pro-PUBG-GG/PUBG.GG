@@ -924,7 +924,7 @@ export const PART_NAMES = {
   bullet_loops: "탄띠",
   red_dot: "레드도트 사이트",
   holograpic: "홀로그램 사이트",
-  hybrid: "캔티드 사이트",
+  hybrid: "하이브리드 스코프",
   two_scope: "2배율 스코프",
   three_scope: "3배율 스코프",
   four_scope: "4배율 스코프",
