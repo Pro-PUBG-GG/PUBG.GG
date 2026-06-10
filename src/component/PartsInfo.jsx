@@ -66,7 +66,7 @@ export default function PartsInfoPage() {
       초크: "choke",
       덕빌: "duckbill",
       // 손잡이류
-      "수직 손잡이": "tilted_grip",
+      "수직 손잡이": "vertical_foregrip",
       "틸티드 그립": "tilted_grip",
       "하프 그립": "half_grip",
       "라이트 그립": "lightweight_grip",

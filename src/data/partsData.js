@@ -69,7 +69,7 @@ export const partsData = [
     {
         id: "Foregrip",
         name: "수직 손잡이",
-        e_name: "Vertical_grip",
+        e_name: "vertical_foregrip",
         effect: [
             {name: "수직 반동", per: -15},
             {name: "격발 시 흔들림", per: -15}

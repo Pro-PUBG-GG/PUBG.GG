@@ -9,9 +9,16 @@ import { patchQuizData } from "../data/patchQuizData"; // 💡 데이터 임포�
 const Container = styled.div`
   width: 100vw;
   min-height: 100vh;
-  background: #1e1e1e; /* 배그 감성의 다크 테마로 배경 개선 */
+  /* 💡 아래 3줄이 핵심입니다: 컨텐츠가 아래로 길어져도 배경이 깨지거나 찢어지지 않고 고정되도록 처리 */
+  background: #1e1e1e; 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  
   margin: 0;
   padding: 0;
+  padding-bottom: 60px; /* 맨 밑 피드백 박스가 늘어났을 때의 여유 하단 여백 확보 */
+  box-sizing: border-box;
   color: #ffffff;
 `;
 
