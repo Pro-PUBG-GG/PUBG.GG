@@ -19,7 +19,7 @@ import m16a4 from "./weapons/m16a4.svg";
 import M24 from "./weapons/M24.svg";
 import M79 from "./weapons/M79.svg";
 import M249 from "./weapons/M249.svg";
-import M416 from "./weapons/M416.svg";
+import M416 from "./weapons/m416.svg";
 import m762 from "./weapons/m762.svg";
 import Machete from "./weapons/Machete.svg";
 import MG3 from "./weapons/MG3.svg";
