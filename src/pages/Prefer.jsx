@@ -6,9 +6,9 @@ import React, { useState } from "react";
 
 import SgImg from "../assets/weapons/DBS.svg";
 import ArImg from "../assets/weapons/groza.svg";
-import SmgImg from "../assets/weapons/p90.svg";
+import SmgImg from "../assets/weapons/P90.svg";
 import SrImg from "../assets/weapons/AWM.svg"; 
-import DmrImg from "../assets/weapons/mk14.svg";
+import DmrImg from "../assets/weapons/Mk14.svg";
 
 import MapImg1 from "../assets/map/erangel.png";
 import MapImg2 from "../assets/map/mirama.png";
@@ -18,7 +18,7 @@ import MapImg5 from "../assets/map/vikendi.png";
 import MapImg6 from "../assets/map/deston.png";
 import MapImg7 from "../assets/map/rondo.png";
 import MapImg8 from "../assets/map/paramo.png";
-import MapImg9 from "../assets/map/karakin.png";
+import MapImg9 from "../assets/map/Karakin.png";
 
 const Container = styled.div`
   width: 100vw;
