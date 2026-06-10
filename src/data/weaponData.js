@@ -175,7 +175,7 @@ export const shotgunData = [
         dps: 90, velocity: 420, rpm: 300, decrease: "30m"
     },
     {
-        id: "SHOTGUN", name: "Sawed-Off", ammo: "12 gauge", shot: 8,
+        id: "SHOTGUN", name: "소드오프", ammo: "12 gauge", shot: 8,
         damage: 22, dps: 176, velocity: 330, decrease: "5m"
     },
 ];
