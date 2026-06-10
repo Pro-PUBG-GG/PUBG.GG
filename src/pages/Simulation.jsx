@@ -426,14 +426,23 @@ const Info = styled.div`
 `;
 
 export default function SimulationPage() {
-  const [currentGun, setCurrentGun] = useState("M416");
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [activeSlot, setActiveSlot] = useState(null);
 
-  const [equippedParts, setEquippedParts] = useState({
-    muzzle: "", grip: "", magazine: "", stock: "", choke: "", bullet_loops: "", scope: ""
-  });
+  const DEFAULT_PARTS = { muzzle: "", grip: "", magazine: "", stock: "", choke: "", bullet_loops: "", scope: "" };
 
+  const [currentGun, setCurrentGun] = useState(() => {
+    return localStorage.getItem("sim_currentGun") || "M416";
+  });
+  
+  const [equippedParts, setEquippedParts] = useState(() => {
+    try {
+      const saved = localStorage.getItem("sim_equippedParts");
+      return saved ? JSON.parse(saved) : DEFAULT_PARTS;
+    } catch {
+      return DEFAULT_PARTS;
+    }
+  });
   const gunConfig = GUN_SETTINGS[currentGun] || { category: "AR", allowedParts: {} };
   const partSuffix = CATEGORY_TO_PART_NUM[gunConfig.category] || "1";
   const activeSlots = Object.keys(gunConfig.allowedParts);
