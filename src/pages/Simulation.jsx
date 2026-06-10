@@ -446,16 +446,23 @@ export default function SimulationPage() {
   const gunConfig = GUN_SETTINGS[currentGun] || { category: "AR", allowedParts: {} };
   const partSuffix = CATEGORY_TO_PART_NUM[gunConfig.category] || "1";
   const activeSlots = Object.keys(gunConfig.allowedParts);
-
+  
   const handleGunSelect = (gunKey) => {
     setCurrentGun(gunKey);
-    setEquippedParts({ muzzle: "", grip: "", magazine: "", stock: "", choke: "", bullet_loops: "", scope: "" });
+    localStorage.setItem("sim_currentGun", gunKey);  // ← 추가
+    const reset = { muzzle: "", grip: "", magazine: "", stock: "", choke: "", bullet_loops: "", scope: "" };
+    setEquippedParts(reset);
+    localStorage.setItem("sim_equippedParts", JSON.stringify(reset));  // ← 추가
     setIsModalOpen(false);
     setActiveSlot(null);
   };
-
+  
   const handlePartSelect = (slotType, partName) => {
-    setEquippedParts(prev => ({ ...prev, [slotType]: partName }));
+    setEquippedParts(prev => {
+      const next = { ...prev, [slotType]: partName };
+      localStorage.setItem("sim_equippedParts", JSON.stringify(next));  // ← 추가
+      return next;
+    });
     setActiveSlot(null);
   };
 
