@@ -223,7 +223,7 @@ export default function WeaponInfoPage() {
     const exceptionMap = {
       Dragunov: "SVD",
       "Beryl M762": "m762",
-      "SCAR-L": "scarl",
+      "SCAR-L": "scar",
       "Mk47 Mutant": "mk47",
       "Mosin Nagant": "Mosin",
       "Lynx AMR": "AMR",
